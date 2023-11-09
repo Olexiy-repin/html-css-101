@@ -1,0 +1,36 @@
+.list {
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: -0.03em;
+  color: #111111;
+}
+
+.menu-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: #111111;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: #fd9222;
+}
