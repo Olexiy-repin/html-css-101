@@ -1,4 +1,30 @@
 /* ============== COMMON STYLES ============== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
 .list {
   list-style-type: none;
 }
@@ -7,12 +33,9 @@
   text-decoration: none;
 }
 
-button {
-  cursor: pointer;
-}
-
 body {
   font-family: 'Montserrat', sans-serif;
+  background-color: #fafafa;
 }
 
 .accent-color {
@@ -28,9 +51,43 @@ body {
   text-transform: uppercase;
   color: #111111;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 1168px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 /* ============== /COMMON STYLES ============== */
 
 /* ============== HEADER STYLES ============== */
+.page-navigation {
+  width: 980px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .logo {
   font-size: 18px;
   font-weight: 700;
@@ -39,11 +96,19 @@ body {
   color: #111111;
 }
 
+.menu {
+  display: flex;
+  column-gap: 24px;
+}
+
 .menu-link {
+  display: block;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: -0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: #111111;
 }
 
@@ -98,6 +163,12 @@ body {
 /* ============== /HERO STYLES ============== */
 
 /* ============== BENEFITS STYLES ============== */
+.benefits {
+  margin-top: 72px;
+  margin-bottom: 50px;
+  background-color: #1e1823;
+}
+
 .benefits-list-title {
   font-size: 18px;
   font-weight: 600;
@@ -112,13 +183,24 @@ body {
 /* ============== /BENEFITS STYLES ============== */
 
 /* ============== INGREDIENTS STYLES ============== */
+.ingredients-section-title {
+  width: 412px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 28px;
+}
+
 .ingredients-description {
+  width: 486px;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.29;
   letter-spacing: -0.02em;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
   color: #111111;
 }
 
@@ -128,6 +210,38 @@ body {
   line-height: 1.29;
   letter-spacing: -0.02em;
   text-transform: uppercase;
+}
+
+.ingredients-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 19px;
+}
+
+.ingredients-list-item {
+  width: calc((100% - 57px) / 4);
+  padding: 32px 28px;
+  border-radius: 15px;
+  border: 1px solid #fd9222;
+}
+
+.ingredients-list-item:nth-child(4n + 1) {
+  color: #ffffff;
+  background-color: #fd9222;
+}
+
+.ingredients-list-item:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.ingredients-list-item:nth-child(4n + 3) {
+  color: #ffffff;
+  background-color: #1e1823;
+  border-color: #1e1823;
+}
+
+.ingredients-list-img {
+  margin-bottom: 36px;
 }
 /* ============== /INGREDIENTS STYLES ============== */
 
