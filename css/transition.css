@@ -18,6 +18,12 @@
   cursor: pointer;
   margin: 0 auto;
   background-color: #2980b9;
+  transition: background-color 500ms linear;
+
+  /* transition-property: background-color;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0, 0.92, 0.92, -0.15);
+  transition-delay: 0ms; */
 }
 
 .btn:hover,
