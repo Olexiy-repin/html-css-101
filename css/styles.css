@@ -211,7 +211,7 @@ body {
 }
 
 .benefits-list-item {
-  width: calc((100% - 196px) / 3);
+  width: calc((100% - 2 * 88px) / 3);
 }
 
 .benefits-list-title {
@@ -425,6 +425,7 @@ body {
 .contact-title {
   font-size: 14px;
   font-weight: 500;
+  font-style: normal;
   line-height: 1.29;
   color: #ffffff;
   margin-bottom: 14px;
