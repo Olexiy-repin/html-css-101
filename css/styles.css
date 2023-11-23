@@ -88,12 +88,26 @@ body {
   align-items: center;
 }
 
+.page-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .logo {
+  display: flex;
+  align-items: center;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: -0.03em;
   color: #111111;
+}
+
+.logo-icon {
+  fill: #fcf1e0;
+  stroke: #fd9222;
+  margin-left: 4px;
 }
 
 .menu {
@@ -110,12 +124,32 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
   color: #111111;
+  transition: color 250ms linear;
 }
 
 .menu-link:hover,
 .menu-link:focus {
   color: #fd9222;
 }
+
+.social-list {
+  display: flex;
+  column-gap: 18px;
+}
+
+.social-list-link {
+  display: block;
+  line-height: 0;
+  stroke: #111111;
+  fill: none;
+  transition: stroke 250ms linear;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  stroke: #fd9222;
+}
+
 /* ============== /HEADER STYLES ============== */
 
 /* ============== HERO STYLES ============== */
@@ -126,6 +160,12 @@ body {
   margin-right: auto;
   border-radius: 30px;
   background-color: rgba(17, 17, 17, 0.6);
+  background-image: linear-gradient(
+      rgba(17, 17, 17, 0.4),
+      rgba(17, 17, 17, 0.4)
+    ),
+    url('../images/hero/bg.jpg');
+  background-size: cover;
 }
 
 .main-title {
@@ -267,7 +307,9 @@ body {
 }
 
 .ingredients-list-item {
+  position: relative;
   width: calc((100% - 57px) / 4);
+  overflow: hidden;
   padding: 32px 28px;
   border-radius: 15px;
   border: 1px solid #fd9222;
@@ -290,6 +332,28 @@ body {
 
 .ingredients-list-img {
   margin-bottom: 36px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  padding: 20px;
+  overflow: auto;
+  transform: translateY(100%);
+  background-color: #ffffff;
+  transition: transform 250ms linear;
+}
+
+.ingredients-list-item:hover .overlay {
+  transform: translateY(0%);
+}
+
+.overlay p {
+  color: teal;
 }
 /* ============== /INGREDIENTS STYLES ============== */
 
