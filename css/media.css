@@ -1,0 +1,132 @@
+/* body {
+  background-color: teal;
+}
+
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1168px) {
+} */
+
+/* ========== MIN-WIDTH & MAX-WIDTH ========== */
+/* 
+500px +
+*/
+/* @media (min-width: 500px) {
+  body {
+    background-color: aqua;
+  }
+} */
+
+/* 
+768px +
+*/
+/* @media (min-width: 768px) {
+  body {
+    background-color: tomato;
+  }
+} */
+
+/* 
+0px - 1023px
+*/
+/* @media (max-width: 1023px) {
+  body {
+    background-color: aqua;
+  }
+} */
+
+/* 
+0px - 767px
+*/
+/* @media (max-width: 767px) {
+  body {
+    background-color: tomato;
+  }
+} */
+/* 
+@media (width: 600px) {
+  body {
+    background-color: aqua;
+  }
+} */
+
+/* ========== AND ========== */
+/* 
+768px + true
+0px - 1023px true
+*/
+/* @media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    background-color: aqua;
+  }
+} */
+
+/* ========== OR ========== */
+/* 
+0px - 767px false
+1024px + false
+*/
+/* @media (max-width: 767px), (min-width: 1024px) {
+  body {
+    background-color: aqua;
+  }
+} */
+
+/* ========== TYPES ========== */
+/* 
+  all
+  screen 
+  print
+*/
+
+/* @media print {
+  .menu {
+    display: none;
+  }
+
+  .btn {
+    display: none;
+  }
+
+  .main-title {
+    font-size: 42px;
+    margin-bottom: 20px;
+  }
+
+  .text {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  .sec {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .section-text {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+} */
+
+/* ========== ORIENTATION ========== */
+/* @media screen and (orientation: portrait) {
+  body {
+    background-color: aqua;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  body {
+    background-color: tomato;
+  }
+} */
