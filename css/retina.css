@@ -18,11 +18,73 @@ body {
 
 .banner {
   min-height: 600px;
-  background-image: url('../images/retina/car.jpg');
+  background-image: url('../images/retina/car-mobile.jpg');
   background-position: center top;
   background-size: 960px 576px;
   background-repeat: no-repeat;
 }
+
+/* 
+screen
+2x +
+0px - 767px
+*/
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px),
+  screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+  .banner {
+    background-image: url('../images/retina/car-mobile@2x.jpg');
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banner {
+    background-image: url('../images/retina/car-tablet.jpg');
+  }
+}
+
+/* 
+screen
+2x +
+768px +
+*/
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+  .banner {
+    background-image: url('../images/retina/car-tablet@2x.jpg');
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .banner {
+    background-image: url('../images/retina/car-desktop.jpg');
+  }
+}
+
+/* 
+screen
+2x +
+1200px +
+*/
+@media screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx),
+  screen and (min-device-pixel-ratio: 2) {
+  .banner {
+    background-image: url('../images/retina/car-desktop@2x.jpg');
+  }
+}
+
+/* 
+2x +
+*/
+/* @media screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx),
+  screen and (min-device-pixel-ratio: 2) {
+  .banner {
+    background-image: url('../images/retina/car@2x.jpg');
+  }
+} */
 
 .team-list {
   display: flex;
